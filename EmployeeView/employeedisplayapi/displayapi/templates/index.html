@@ -1,0 +1,29 @@
+<html>
+<head>
+    <title>API Display</title>
+    <style>
+        table,td{
+            border: 1px solid #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>Names</h1>
+    <table>
+        <tr>
+            <th>Nome</th>
+            <th>Email</th>
+            <th>Departamento</th>
+        </tr>
+        {% for r in response %}
+        <tr>
+            <td>{{r.Empname}}</td>
+            <td>{{r.email}}</td>
+            <td>{{r.depat}}</td>
+        </tr>
+        {% endfor %}
+        
+    </table>
+    
+</body>
+</html>
