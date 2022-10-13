@@ -15,11 +15,11 @@
             <th>Email</th>
             <th>Departamento</th>
         </tr>
-        {% for r in response %}
+        {% for e in employees %}
         <tr>
-            <td>{{r.Empname}}</td>
-            <td>{{r.email}}</td>
-            <td>{{r.depat}}</td>
+            <td>{{e.0}}</td>
+            <td>{{e.1}}</td>
+            <td>{{e.2}}</td>
         </tr>
         {% endfor %}
         
